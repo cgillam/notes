@@ -65,5 +65,5 @@ app.get("/*", (Request, Response) => {
 
 
 
-app.listen(3000, () => console.log("server started http://localhost:3000"))
+app.listen(process.env.PORT || 3000, () => console.log("server started http://localhost:3000"))
 
